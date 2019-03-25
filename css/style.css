@@ -19,4 +19,20 @@
   .light{
     text-align: center;
   }
+  @media (min-width: 850px){
+    .row_line{
+      grid-template-areas: "content content content";
+      display: grid;
+      grid-template-columns: 1fr, 1fr, 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+  @media (max-width: 850px){
+    .row_line{
+      grid-template-areas: "content" "content" "content";
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr, 1fr, 1fr;
+    }
+  }
 }
