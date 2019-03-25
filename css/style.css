@@ -19,6 +19,7 @@
   .light{
     text-align: center;
   }
+
   @media (min-width: 850px){
     .row_line{
       grid-template-areas: "content content content";
@@ -71,6 +72,9 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr, 1fr, 1fr;
     }
+    .decor{
+      margin: 0px 100px 50px 100px;
+    }
   }
   @media (max-width: 850px){
     .row_line{
@@ -79,5 +83,25 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr, 1fr, 1fr;
     }
+    .decor{
+      margin: 0px 20px 50px 20px;
+    }
+  }
+  .decor{
+    position: relative;
+    background: #29B6F6;
+    border-radius: 30px;
+    grid-template-areas: "content";
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid black;
+    padding: 20px;
+  }
+  .form-inner > h4{
+    color: white;
+  }
+  textarea, input.name, input.email{
+    background-color: white;
+    border-radius: 5px;
   }
 }
